@@ -38,6 +38,7 @@ dependencies:
   gap: ^3.0.1
   dots_indicator: ^3.0.0
   get: ^4.6.6
+  persistent_bottom_nav_bar: ^5.0.2
 
 dev_dependencies:
   flutter_test:

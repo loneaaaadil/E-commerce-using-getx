@@ -5,15 +5,17 @@ import 'package:e_commerce_app/pages/food/popular_food_datails.dart';
 import 'package:e_commerce_app/pages/food/recomended_food_details.dart';
 import 'package:e_commerce_app/pages/home/home_page.dart';
 import 'package:e_commerce_app/pages/home/main_food_page.dart';
+import 'package:e_commerce_app/pages/splash/splash_screen.dart';
 import 'package:get/get.dart';
 
 class RouteHelper {
+  static const String splashScreen = '/splash-page';
   static const String intial = '/';
   static const String popularFood = '/popular-food';
   static const String recommendedFood = '/recommended-food';
   static const String cartPage = '/cart-page';
 
-  // ignore: unnecessary_string_interpolations
+  static String getSplash() => '$splashScreen';
   static String getInitial() => '$intial';
 
   //parameter page id=?pageId
@@ -24,6 +26,7 @@ class RouteHelper {
   static String getCartPage() => '$cartPage';
 
   static List<GetPage> routes = [
+    GetPage(name: splashScreen, page: () => const SplashScreen()),
     GetPage(name: intial, page: () => const HomePage()),
     GetPage(
       name: popularFood,
