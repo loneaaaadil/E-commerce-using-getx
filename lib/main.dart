@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/controllers/cart_controller.dart';
 import 'package:e_commerce_app/controllers/popular_product_controller.dart';
 import 'package:e_commerce_app/controllers/recomemded_product_controller.dart';
 import 'package:e_commerce_app/pages/food/popular_food_datails.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    Get.find<CartController>().getCartData();
     print('height of screen ${MediaQuery.of(context).size.height}');
     return GetBuilder<PopularProductController>(
       builder: (_) => GetBuilder<RecomemdedProductController>(
