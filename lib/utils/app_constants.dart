@@ -6,4 +6,7 @@ class AppConstants {
   static const POPULAR_PRODUCT_URI = '/api/v1/products/popular';
   static const RECOMENDED_PRODUCT_URI = '/api/v1/products/recommended';
   static const UPLOADS = "/uploads/";
+
+  static const CART_LIST = "cart-list";
+  static const CART_HISTORY_LIST = "cart-history-list";
 }
